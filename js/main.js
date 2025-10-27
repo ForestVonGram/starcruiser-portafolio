@@ -28,3 +28,11 @@ function toggleMenu() {
 navToggle.addEventListener('click', toggleMenu);
 navClose.addEventListener('click', toggleMenu);
 navOverlay.addEventListener('click', toggleMenu);
+
+const navItems = document.querySelectorAll('.nav-links a');
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    navOverlay.classList.remove('show');
+  });
+});
