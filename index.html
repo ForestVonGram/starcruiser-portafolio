@@ -19,14 +19,25 @@
 <header>
   <nav class="navbar">
     <h1 class="logo">Star Cruiser</h1>
-    <u1 class="nav-links">
+
+    <!-- Botón hamburguesa -->
+    <button class="nav-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <ul class="nav-links">
+      <li class="nav-close"><button aria-label="cerrar-menú">x</button></li>
+
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#acerca-de">Acerca de</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#contacto">Contacto</a></li>
-    </u1>
+    </ul>
   </nav>
+
+  <div class="nav-overlay"></div>
+
 </header>
 
 <!-- === INICIO === -->

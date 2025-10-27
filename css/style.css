@@ -38,10 +38,21 @@ header {
   font-size: 1.2rem;
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1E293B;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -52,6 +63,68 @@ header {
 
 .nav-links a:hover {
   color: #38bdf8;
+}
+
+.nav-close {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background: #F8FAFC;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 1.5rem;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1501;
+  }
+
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
+  .nav-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+  }
+
+  .nav-close button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #1E293B;
+  }
+
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1500;
+  }
+
+  .nav-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /* ======= HERO ======= */
