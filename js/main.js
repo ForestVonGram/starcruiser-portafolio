@@ -36,3 +36,14 @@ navItems.forEach(item => {
     navOverlay.classList.remove('show');
   });
 });
+
+// === ANIMACIÓN DE CARGA ===
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  // Esperar 1.5 segundos y luego desvanecer
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 1500);
+});
+
