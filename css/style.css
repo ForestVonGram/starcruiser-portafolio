@@ -19,6 +19,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h3 {
+  color: #38bdf8;
+}
+
 /* ======= NAVBAR ======= */
 header {
   background: #F8FAFC;
