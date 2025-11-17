@@ -195,10 +195,14 @@ header {
 }
 
 .card {
+  display: block;
   background: #1e293b;
   border-radius: 10px;
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .card:hover {
