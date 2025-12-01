@@ -45,12 +45,15 @@
     <ul class="nav-links">
       <li class="nav-close"><button aria-label="cerrar-menú">x</button></li>
 
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca-de">Acerca de</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#inicio" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="#acerca-de" data-i18n="nav_about">Acerca de</a></li>
+      <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+      <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
     </ul>
+
+    <button id="langBtn" class="lang-btn">EN</button>
+
   </nav>
 
   <div class="nav-overlay"></div>
@@ -61,17 +64,17 @@
 
 <section id="inicio" class="section hero">
   <div class="content">
-    <h2>Bienvenido, esto es <span>Cruiserex</span></h2>
-    <p>Soluciones de Software de cualquier tipo, enfocadas en lo mejor para los clientes.</p>
-    <a href="#contacto" class="btn">Agendar cita</a>
+    <h2 data-i18n="hero_title">Bienvenido, esto es <span>Cruiserex</span></h2>
+    <p data-i18n="hero_subtitle">Soluciones de Software de cualquier tipo, enfocadas en lo mejor para los clientes.</p>
+    <a href="#contacto" class="btn" data-i18n="hero_button">Agendar cita</a>
   </div>
 </section>
 
 <!-- === ACERCA DE === -->
 
 <section id="acerca-de" class="section scroll-anim">
-  <h2>Acerca de</h2>
-  <p>
+  <h2 data-i18n="about_title">Acerca de</h2>
+  <p data-i18n="about_text">
     Empresa unipersonal creada por David G. R., ingeniero de sistemas apasionado por la tecnología, la innovación y el desarrollo de software.
     Enfocado en crear soluciones que combinen rendimiento, usabilidad y un diseño funcional.
   </p>
@@ -80,27 +83,27 @@
 <!-- === SERVICIOS === -->
 
 <section id="servicios" class="section scroll-anim">
-  <h2>Servicios</h2>
+  <h2 data-i18n="services_title">Servicios</h2>
   <div class="cards">
     <div class="card">
-      <h3>Desarrollo de Software</h3>
-      <p>Aplicaciones web o de escritorio adaptadas a tus necesidades, con buenas prácticas y tecnologías modernas.</p>
+      <h3 data-i18n="software_service">Desarrollo de Software</h3>
+      <p data-i18n="software_service_text">Aplicaciones web o de escritorio adaptadas a tus necesidades, con buenas prácticas y tecnologías modernas.</p>
     </div>
     <div class="card">
-      <h3>Creación de APIs</h3>
-      <p>Diseño e implementación de APIs REST seguras y escalables para conectar tus servicios y aplicaciones.</p>
+      <h3 data-i18n="api_service">Creación de APIs</h3>
+      <p data-i18n="api_service_text">Diseño e implementación de APIs REST seguras y escalables para conectar tus servicios y aplicaciones.</p>
     </div>
     <div class="card">
-      <h3>Mantenimiento de Software</h3>
-      <p>Mantenimiento preventivo y correctivo de aplicaciones y sistemas, para mantenerlos en funcionamiento y actualizados.</p>
+      <h3 data-i18n="maintenance_service">Mantenimiento de Software</h3>
+      <p data-i18n="maintenance_service_text">Mantenimiento preventivo y correctivo de aplicaciones y sistemas, para mantenerlos en funcionamiento y actualizados.</p>
     </div>
     <div class="card">
-      <h3>Consultoría técnica</h3>
-      <p>Asesoramiento en arquitectura de software, bases de datos y optimización de procesos tecnológicos.</p>
+      <h3 data-i18n="consultancy_service">Consultoría técnica</h3>
+      <p data-i18n="consultancy_service_text">Asesoramiento en arquitectura de software, bases de datos y optimización de procesos tecnológicos.</p>
     </div>
     <div class="card">
-      <h3>Infraestructura de redes</h3>
-      <p>Montaje de sistemas de redes y comunicaciones, configuración de direcciones y asesoramiento.</p>
+      <h3 data-i18n="infrastructure_service">Infraestructura de redes</h3>
+      <p data-i18n="infrastructure_service_text">Montaje de sistemas de redes y comunicaciones, configuración de direcciones y asesoramiento.</p>
     </div>
   </div>
 </section>
@@ -108,24 +111,24 @@
 <!-- === PROYECTOS === -->
 
 <section id="proyectos" class="section scroll-anim">
-  <h2>Proyectos</h2>
+  <h2 data-i18n="projects_title">Proyectos</h2>
   <div class="cards">
     <!-- Cada card completa es un enlace; cambia los href por las URLs reales -->
     <a class="card" href="https://github.com/ForestVonGram/hospedara-proyecto" target="_blank" rel="noopener noreferrer">
       <h3>HospedaYa</h3>
-      <p>Plataforma de gestión de alojamientos, desarrollada con Spring Boot y Angular. Backend desplegado en Render y Frontend en Netlify.</p>
+      <p data-i18n="hospedaya_text">Plataforma de gestión de alojamientos, desarrollada con Spring Boot y Angular. Backend desplegado en Render y Frontend en Netlify.</p>
     </a>
     <a class="card" href="#" target="_blank" rel="noopener noreferrer">
-      <h3>Portafolio Cruiserex</h3>
-      <p>Página web donde se observan los servicios que ofrece la empresa.</p>
+      <h3 data-i18n="cruiserex_portfolio">Portafolio Cruiserex</h3>
+      <p data-i18n="cruiserex_portfolio_text">Página web donde se observan los servicios que ofrece la empresa.</p>
     </a>
     <a class="card" href="https://github.com/ForestVonGram/motorplus-taller" target="_blank" rel="noopener noreferrer">
-      <h3>Talle automotriz Motorplus</h3>
-      <p>Plataforma de gestión de usuarios, vehículos, mecánicos, repuestos, órdenes, facturas y generación de reportes.</p>
+      <h3 data-i18n="motorplus_workshop">Taller automotriz Motorplus</h3>
+      <p data-i18n="motorplus_workshop_text">Plataforma de gestión de usuarios, vehículos, mecánicos, repuestos, órdenes, facturas y generación de reportes.</p>
     </a>
     <a class="card" href="https://github.com/ForestVonGram/CompuTienda" target="_blank" rel="noopener noreferrer">
       <h3>CompuTienda</h3>
-      <p>Tienda virtual de computadoras, con catálogo, compras en línea y contacto.</p>
+      <p data-i18n="computienda_text">Tienda virtual de computadoras, con catálogo, compras en línea y contacto.</p>
     </a>
   </div>
 </section>
@@ -133,11 +136,11 @@
 <!-- === CONTACTO === -->
 
 <section id="contacto" class="section contact">
-  <h2>Contacto</h2>
-  <p>¿Quieres solicitar un servicio? Contáctame.</p>
+  <h2 data-i18n="contact_title">Contacto</h2>
+  <p data-i18n="contact_text">¿Quieres solicitar un servicio? Contáctame.</p>
   <div class="contact-links">
     <a href="mailto:starcruiserinfoofc@gmail.com">starcruiserinfoofc@gmail.com</a>
-    <a href="tel: +573017275512" target="_blank">Teléfono de contacto: +57 301 7275512</a>
+    <a href="tel: +573017275512" target="_blank" data-i18n="phone_number">Teléfono de contacto: +57 301 7275512</a>
     <a href="https://github.com/ForestVonGram" target="_blank">GitHub</a>
     <a href="https://www.instagram.com/cruiserex.tech/" target="_blank">Instagram</a>
   </div>

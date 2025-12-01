@@ -231,6 +231,16 @@ header {
   .nav-toggle {
     display: block;
   }
+  .logo {
+    flex: 1;
+  }
+  .lang-btn {
+    order: 2;
+    margin-right: 0.5rem;
+  }
+  .nav-toggle {
+    order: 3;
+  }
   .nav-links {
     position: fixed;
     top: 0;
@@ -328,10 +338,14 @@ header {
   margin-top: 2rem;
 }
 .card {
+  display: block;
   background: #1e293b;
   border-radius: 10px;
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -392,4 +406,12 @@ footer {
 #loader.hidden {
   opacity: 0;
   visibility: hidden;
+}
+.lang-btn {
+  background: none;
+  border: 1px solid #1E293B;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #1E293B;
 }
