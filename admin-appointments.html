@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cruiserex | Administración de citas</title>
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- ESTILOS Y FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+
+<!-- === ANIMACIÓN DE CARGA === -->
+<div id="loader">
+  <img src="img/loader.gif" alt="Cargando..." />
+</div>
+
+<!-- === HEADER === -->
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Cruiserex</h1>
+
+    <!-- Botón hamburguesa -->
+    <button class="nav-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <ul class="nav-links">
+      <li class="nav-close"><button aria-label="cerrar-menú">x</button></li>
+      <li><a href="index.html#inicio" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="index.html#acerca-de" data-i18n="nav_about">Acerca de</a></li>
+      <li><a href="index.html#servicios" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="index.html#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+      <li><a href="index.html#contacto" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+
+    <button id="langBtn" class="lang-btn">EN</button>
+  </nav>
+
+  <div class="nav-overlay"></div>
+</header>
+
+<!-- === CONTENIDO: PANEL ADMIN === -->
+<section id="admin" class="section scroll-anim">
+  <h2 data-i18n="admin_title">Administración de citas</h2>
+  <p data-i18n="admin_intro">Esta sección es solo para uso interno. Aquí puedes revisar y gestionar las citas agendadas.</p>
+
+  <!-- Login de administrador -->
+  <div id="admin-login" class="appointment-form-card">
+    <h3 data-i18n="admin_login_title">Iniciar sesión como administrador</h3>
+    <p data-i18n="admin_login_text">Ingresa la clave de administrador configurada en las variables de entorno (ADMIN_SECRET).</p>
+    <form id="admin-login-form">
+      <div class="form-row">
+        <label for="admin-secret" data-i18n="admin_login_label">Clave de administrador</label>
+        <input type="password" id="admin-secret" name="admin-secret" required />
+      </div>
+      <button type="submit" class="btn" data-i18n="admin_login_button">Ingresar</button>
+    </form>
+    <div id="admin-login-message" class="appointment-message"></div>
+  </div>
+
+  <!-- Panel de citas -->
+  <div id="admin-panel" class="admin-panel" style="display:none;">
+    <div class="admin-panel-header">
+      <h3 data-i18n="admin_panel_title">Citas actuales</h3>
+      <button id="admin-logout" class="btn btn-secondary" data-i18n="admin_logout_button">Cerrar sesión</button>
+    </div>
+
+    <div id="admin-panel-message" class="appointment-message"></div>
+
+    <div class="admin-table-wrapper">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th data-i18n="admin_th_date">Fecha</th>
+            <th data-i18n="admin_th_time">Hora</th>
+            <th data-i18n="admin_th_requester">Solicitante</th>
+            <th data-i18n="admin_th_company">Empresa</th>
+            <th data-i18n="admin_th_location">Ubicación</th>
+            <th data-i18n="admin_th_phone">Teléfono</th>
+            <th data-i18n="admin_th_email">Correo</th>
+            <th data-i18n="admin_th_status">Estado</th>
+            <th data-i18n="admin_th_actions">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="appointments-body">
+          <!-- Filas generadas por JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- === FOOTER === -->
+<footer>
+  <p>© 2025 Cruiserex</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/admin-appointments.js"></script>
+
+</body>
+</html>

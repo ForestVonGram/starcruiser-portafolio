@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cruiserex | Agendar cita</title>
+
+  <!-- METADATOS BÁSICOS -->
+  <meta name="description" content="Agenda una cita con Cruiserex para hablar sobre soluciones de software a la medida.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- ESTILOS Y FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+<!-- === ANIMACIÓN DE CARGA === -->
+<div id="loader">
+  <img src="img/loader.gif" alt="Cargando..." />
+</div>
+
+<!-- === HEADER === -->
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Cruiserex</h1>
+
+    <!-- Botón hamburguesa -->
+    <button class="nav-toggle" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <ul class="nav-links">
+      <li class="nav-close"><button aria-label="cerrar-menú">x</button></li>
+
+      <li><a href="index.html#inicio" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="index.html#acerca-de" data-i18n="nav_about">Acerca de</a></li>
+      <li><a href="index.html#servicios" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="index.html#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+      <li><a href="index.html#contacto" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+
+    <button id="langBtn" class="lang-btn">EN</button>
+  </nav>
+
+  <div class="nav-overlay"></div>
+</header>
+
+<!-- === CONTENIDO PRINCIPAL: FORMULARIO DE CITA === -->
+<section id="appointment" class="section scroll-anim">
+  <h2 data-i18n="appointment_title">Agendar cita</h2>
+  <p data-i18n="appointment_intro">Llena el siguiente formulario para solicitar una cita virtual con Cruiserex.</p>
+
+  <div class="appointment-form-card">
+    <form id="appointment-form">
+      <div class="form-row">
+        <label for="date" data-i18n="appointment_date_label">Día</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="form-row">
+        <label for="time" data-i18n="appointment_time_label">Hora</label>
+        <input type="time" id="time" name="time" required />
+      </div>
+
+      <div class="form-row">
+        <label for="requester_name" data-i18n="appointment_requester_label">Nombre del solicitante</label>
+        <input type="text" id="requester_name" name="requester_name" required />
+      </div>
+
+      <div class="form-row">
+        <label for="company_name" data-i18n="appointment_company_label">Nombre de la empresa</label>
+        <input type="text" id="company_name" name="company_name" required />
+      </div>
+
+      <div class="form-row">
+        <label for="company_location" data-i18n="appointment_location_label">Ubicación de la empresa</label>
+        <input type="text" id="company_location" name="company_location" required />
+      </div>
+
+      <div class="form-row">
+        <label for="phone" data-i18n="appointment_phone_label">Teléfono</label>
+        <input type="tel" id="phone" name="phone" inputmode="numeric" pattern="[0-9]*" required />
+      </div>
+
+      <div class="form-row">
+        <label for="email" data-i18n="appointment_email_label">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-row">
+        <label for="reason" data-i18n="appointment_reason_label">Motivo de la cita</label>
+        <textarea id="reason" name="reason" maxlength="500" placeholder="Describe brevemente la razón de la cita" required></textarea>
+      </div>
+
+      <button type="submit" class="btn" data-i18n="appointment_submit_button">Confirmar cita</button>
+    </form>
+
+    <div id="appointment-message" class="appointment-message"></div>
+  </div>
+</section>
+
+<!-- === FOOTER === -->
+<footer>
+  <p>© 2025 Cruiserex</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/appointment.js"></script>
+
+</body>
+</html>

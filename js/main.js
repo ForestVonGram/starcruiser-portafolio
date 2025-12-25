@@ -44,6 +44,45 @@ const translations = {
     contact_title: "Contacto",
     contact_text: "¿Quieres solicitar un servicio? Contáctame.",
     phone_number: "Teléfono de contacto: +57 301 7275512",
+
+    // Appointment page
+    appointment_title: "Agendar cita",
+    appointment_intro: "Llena el siguiente formulario para solicitar una cita virtual con Cruiserex.",
+    appointment_date_label: "Día",
+    appointment_time_label: "Hora",
+    appointment_requester_label: "Nombre del solicitante",
+    appointment_company_label: "Nombre de la empresa",
+    appointment_location_label: "Ubicación de la empresa",
+    appointment_phone_label: "Teléfono",
+    appointment_email_label: "Correo electrónico",
+    appointment_reason_label: "Motivo de la cita",
+    appointment_submit_button: "Confirmar cita",
+
+    // Admin page
+    admin_title: "Administración de citas",
+    admin_intro: "Esta sección es solo para uso interno. Aquí puedes revisar y gestionar las citas agendadas.",
+    admin_login_title: "Iniciar sesión como administrador",
+    admin_login_text: "Ingresa la clave de administrador configurada en las variables de entorno (ADMIN_SECRET).",
+    admin_login_label: "Clave de administrador",
+    admin_login_button: "Ingresar",
+    admin_panel_title: "Citas actuales",
+    admin_logout_button: "Cerrar sesión",
+    admin_th_date: "Fecha",
+    admin_th_time: "Hora",
+    admin_th_requester: "Solicitante",
+    admin_th_company: "Empresa",
+    admin_th_location: "Ubicación",
+    admin_th_phone: "Teléfono",
+    admin_th_email: "Correo",
+    admin_th_status: "Estado",
+    admin_th_actions: "Acciones",
+
+    // Mensajes de la página de citas
+    appointment_sending: "Enviando cita...",
+    appointment_past_datetime_error: "La fecha y la hora deben ser posteriores al momento actual.",
+    appointment_generic_error: "Ocurrió un error al enviar la cita. Inténtalo de nuevo más tarde.",
+    appointment_backend_error: "No se pudo crear la cita",
+    appointment_success_popup: "La cita se ha agendado correctamente. Recibirás un mensaje de confirmación a tu correo.",
   },
   en: {
     // Navbar
@@ -88,6 +127,45 @@ const translations = {
     contact_title: "Contact",
     contact_text: "Do you want to request a service? Get in touch with me.",
     phone_number: "Contact phone: +57 301 7275512",
+
+    // Appointment page
+    appointment_title: "Book an appointment",
+    appointment_intro: "Fill out the following form to request a virtual appointment with Cruiserex.",
+    appointment_date_label: "Day",
+    appointment_time_label: "Time",
+    appointment_requester_label: "Requester name",
+    appointment_company_label: "Company name",
+    appointment_location_label: "Company location",
+    appointment_phone_label: "Phone",
+    appointment_email_label: "Email",
+    appointment_reason_label: "Appointment reason",
+    appointment_submit_button: "Confirm appointment",
+
+    // Admin page
+    admin_title: "Appointment administration",
+    admin_intro: "This section is for internal use only. Here you can review and manage scheduled appointments.",
+    admin_login_title: "Admin sign in",
+    admin_login_text: "Enter the administrator key configured in the environment variables (ADMIN_SECRET).",
+    admin_login_label: "Administrator key",
+    admin_login_button: "Sign in",
+    admin_panel_title: "Current appointments",
+    admin_logout_button: "Sign out",
+    admin_th_date: "Date",
+    admin_th_time: "Time",
+    admin_th_requester: "Requester",
+    admin_th_company: "Company",
+    admin_th_location: "Location",
+    admin_th_phone: "Phone",
+    admin_th_email: "Email",
+    admin_th_status: "Status",
+    admin_th_actions: "Actions",
+
+    // Appointment page messages
+    appointment_sending: "Sending appointment...",
+    appointment_past_datetime_error: "The date and time must be later than the current moment.",
+    appointment_generic_error: "An error occurred while sending the appointment. Please try again later.",
+    appointment_backend_error: "The appointment could not be created",
+    appointment_success_popup: "The appointment has been scheduled successfully. You will receive a confirmation email shortly.",
   }
 };
 

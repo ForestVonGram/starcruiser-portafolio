@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ForestVonGram/starcruiser-portafolio#readme",
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "nodemailer": "^6.9.16",
     "@tailwindcss/cli": "^4.1.16",
     "tailwindcss": "^4.1.16"
   }

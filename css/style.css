@@ -309,3 +309,166 @@ footer {
   cursor: pointer;
   color: #1E293B;
 }
+
+/* ======= FORMULARIO DE CITAS ======= */
+.appointment-form-card {
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.appointment-form-card .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.appointment-form-card label {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.appointment-form-card input,
+.appointment-form-card textarea {
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.appointment-form-card input:focus,
+.appointment-form-card textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px #38bdf8;
+}
+
+.appointment-form-card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.appointment-message {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.appointment-message.success {
+  color: #4ade80;
+}
+
+.appointment-message.error {
+  color: #f97373;
+}
+
+/* ======= PANEL ADMIN ======= */
+.admin-panel {
+  margin-top: 2.5rem;
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.admin-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #e2e8f0;
+  border: 1px solid #64748b;
+}
+
+.btn-secondary:hover {
+  background: #1f2937;
+}
+
+.btn-danger {
+  background: #b91c1c;
+  color: #f9fafb;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* Botones pequeños para acciones en la tabla admin */
+.btn-xs {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.8rem;
+}
+
+.btn-success {
+  background: #15803d;
+  color: #f9fafb;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-success:hover {
+  background: #22c55e;
+}
+
+.btn-warning {
+  background: #92400e;
+  color: #f9fafb;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-warning:hover {
+  background: #ea580c;
+}
+
+.admin-table-wrapper {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #334155;
+  text-align: left;
+}
+
+/* Contenedor de botones de acción */
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.admin-table th {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.admin-table tr:hover {
+  background: #020617;
+}
