@@ -16,7 +16,7 @@ const translations = {
 
     // Acerca de
     about_title: "Acerca de",
-    about_text: "Empresa unipersonal creada por David G. R., ingeniero de sistemas apasionado por la tecnología, la innovación y el desarrollo de software. Enfocado en crear soluciones que combinen rendimiento, usabilidad y un diseño funcional.",
+    about_text: "Cruiserex es una empresa unipersonal fundada por David G. R., dedicada al desarrollo de aplicaciones y software a la medida de las necesidades de cada cliente. Se enfoca en crear soluciones que combinan rendimiento, usabilidad y un diseño funcional.",
 
     // Servicios
     services_title: "Servicios",
@@ -99,7 +99,7 @@ const translations = {
 
     // About
     about_title: "About",
-    about_text: "One-person company created by David G. R., a systems engineer passionate about technology, innovation and software development. Focused on creating solutions that combine performance, usability and functional design.",
+    about_text: "Cruiserex is a sole proprietorship founded by David G. R., dedicated to developing custom applications and software tailored to each client's needs. It focuses on creating solutions that combine performance, usability, and functional design.",
 
     // Services
     services_title: "Services",
