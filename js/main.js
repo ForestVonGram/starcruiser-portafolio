@@ -42,7 +42,7 @@ const translations = {
 
     // Contacto
     contact_title: "Contacto",
-    contact_text: "¿Quieres solicitar un servicio? Contáctame.",
+    contact_text: "¿Requieres mayor información?",
     phone_number: "Teléfono de contacto: +57 301 7275512",
 
     // Appointment page
@@ -125,7 +125,7 @@ const translations = {
 
     // Contact
     contact_title: "Contact",
-    contact_text: "Do you want to request a service? Get in touch with me.",
+    contact_text: "Do you need more information?",
     phone_number: "Contact phone: +57 301 7275512",
 
     // Appointment page
